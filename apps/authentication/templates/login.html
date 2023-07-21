@@ -1,0 +1,12 @@
+{% extends 'layouts/base-fullscreen.html' %}
+{% block content %}
+<div class="container">
+  <legend>Login</legend>
+  <form action="/login" method="POST">
+
+    {% include 'forms/login-form.html' %}
+    <button class="btn btn-primary" type="submit">Login</button>
+  </form>
+</div>
+  
+{% endblock content %}
